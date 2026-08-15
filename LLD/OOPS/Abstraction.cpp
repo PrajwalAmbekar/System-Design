@@ -1,11 +1,11 @@
-#include <iostream>
+ #include <iostream>
 #include <string>
 using namespace std;
 
 // Abtraction is a process of hiding the implementation details and showing only functionality to the user. In C++, abstraction can be achieved using abstract classes and interfaces. An abstract class is a class that cannot be instantiated and is designed to be inherited by other classes. It can contain pure virtual functions, which are functions that have no implementation in the base class and must be overridden in derived classes.
 class Car
 {
-    //characteristics of Car
+   //Behavior of Car
 public:
     virtual void startEngine() = 0;
     virtual void stopEngine() = 0;
@@ -15,8 +15,9 @@ public:
     virtual ~Car() = default; // Virtual destructor for proper cleanup of derived classes
 };
 
-class SportsCar : public Car
 
+
+class SportsCar : public Car
 {
     //Characteristics of SportsCar
 public:
@@ -68,7 +69,7 @@ public:
         }
     }
 
-      void stopEngine() {
+    void stopEngine() {
         isEngineOn = false;
         currentSpeed = 0;
         currentGear = 0;

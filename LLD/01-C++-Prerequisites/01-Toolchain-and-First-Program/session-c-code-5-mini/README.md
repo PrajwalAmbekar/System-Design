@@ -88,33 +88,33 @@ The same billing problem is progressively reorganized across the sessions.
 │  ├── integer overflow                                       │
 │  └── integer division                                       │
 │                                                             │
-│ Focus: understanding incorrect/unsafe arithmetic             │
+│ Focus: understanding incorrect/unsafe arithmetic            │
 └──────────────────────────────┬──────────────────────────────┘
                                │
                                ▼
 ┌─────────────────────────────────────────────────────────────┐
 │ CODE 3 — Product + LineItem                                 │
 │                                                             │
-│ Product                                                      │
+│ Product                                                     │
 │    ▲                                                        │
 │    │ contains                                               │
 │    │                                                        │
-│ LineItem                                                     │
+│ LineItem                                                    │
 │                                                             │
-│ Focus: classes, objects and composition                      │
+│ Focus: classes, objects and composition                     │
 └──────────────────────────────┬──────────────────────────────┘
                                │
                                ▼
 ┌─────────────────────────────────────────────────────────────┐
 │ CODE 4 — Invoice + Logger                                   │
 │                                                             │
-│ Logger ◄──────── Invoice                                     │
-│          reference                                           │
+│ Logger ◄──────── Invoice                                    │
+│          reference                                          │
 │                                                             │
 │ Logger is created externally by main().                     │
 │ Invoice receives and uses that Logger.                      │
 │                                                             │
-│ Focus: association, dependency and object collaboration      │
+│ Focus: association, dependency and object collaboration     │
 └─────────────────────────────────────────────────────────────┘
 ```
 

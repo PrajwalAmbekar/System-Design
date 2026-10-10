@@ -230,7 +230,3 @@ Typical sizes below assume a common modern GCC target. Exact sizes depend on the
 - The first program's corrected executable name is `functions`, matching its run command.
 - The second program must include the pricing functions it calls before it can compile successfully.
 - With the supplied implementations, no unused-variable warning is expected from the listed `-Wall -Wextra` options.
-
-## Next
-
-- **Pass-by-reference:** Learn how to let a function modify the caller's variable by accepting a reference parameter instead of a copy.
